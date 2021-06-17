@@ -16,7 +16,7 @@ function init() {
                 .text(people)
                 .property("value", people)
         })
-        //line 17 starts looking at names list with ids. then looping through the people on list
+        //looking at names list with ids and looping through ids
         var initialdata = data.samples[0]
         console.log(data);
         Bardata(initialdata)
@@ -28,7 +28,6 @@ function init() {
 init()
 // code above will populate below after code is run
 
-//                question 2 
 
 //Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
 function Bardata(tableData) {
@@ -60,7 +59,7 @@ function Bardata(tableData) {
     }
         Plotly.newPlot("bar", trace1, layout);
 }
-//               Question 3
+
 //  Create a bubble chart that displays each sample.
 
 function Bubbledata(tableData) {
